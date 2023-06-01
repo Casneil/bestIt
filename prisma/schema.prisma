@@ -1,0 +1,60 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+	id Int @id @default(autoincrement())
+	createdAt DateTime @default(now())
+	updatedAt DateTime @updatedAt
+	email String @unique
+	name String?
+	username String? @unique
+	tokens Token[]
+}
+
+model Token {
+	id Int @id @default(autoincrement())
+	createdAt DateTime @default(now())
+	updatedAt DateTime @updatedAt
+	type String // Use EMAIL or AUTH ENUM when using postgresql or sql database
+	emailToken String? @unique
+	isValidToken Boolean @default(true)
+	expiration DateTime
+	userId Int
+	user User @relation(fields: [userId], references: [id])
+}
+
+model Product {
+	id Int @id @default(autoincrement())
+	createdAt DateTime @default(now())
+	updatedAt DateTime @updatedAt
+	title String
+	description String
+	price Float
+	discountPercentage Float
+	rating Float
+	stock Int
+	brand String
+	category String
+	thumbnail String
+	images Image[]
+	impression Int @default(0)
+}
+
+model Image {
+	id Int @id @default(autoincrement())
+	createdAt DateTime @default(now())
+	updatedAt DateTime @updatedAt
+	image String
+	productId Int
+	product Product @relation(fields: [productId], references: [id])
+}
+
