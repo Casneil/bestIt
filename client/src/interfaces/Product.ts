@@ -1,7 +1,7 @@
 interface Image {
 	id: number;
 	image: string;
-}
+};
 
 interface BaseProduct {
 	id: number;
@@ -17,13 +17,13 @@ interface BaseProduct {
 	brand: string;
 	category: string;
 	thumbnail: string;
-}
+};
 
 interface Product extends BaseProduct {
 	images: Image[];
-}
+};
 
 export type {
 	BaseProduct,
-	Product
-}
+	Product,
+};

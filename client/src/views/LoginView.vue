@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 	import AuthModal from '@/components/organisms/modal.vue'
 	import { useAuthStore } from '@/stores/auth';
 

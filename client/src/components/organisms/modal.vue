@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 	import EmailInput from '@/components/atoms/emailInput.vue';
 	import TokenInput from '../atoms/tokenInput.vue';
 	import { reactive } from 'vue';
@@ -13,7 +14,6 @@
 	const props = defineProps({
 		isEmailModal: { type: Boolean, required: true },
 	});
-
 
 	const handleEmit = (): void => {
 		if (props.isEmailModal) {

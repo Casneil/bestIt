@@ -15,7 +15,6 @@ const loginSchema = {
 	}
 };
 
-
 const loginResponseSchema = {
 	type: 'object',
 	properties: {

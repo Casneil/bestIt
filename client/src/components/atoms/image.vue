@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 	interface Props {
 		title: string;
 		thumbnail: string;
@@ -6,6 +7,7 @@
 	};
 
 	const props = defineProps<Props>();
+
 </script>
 
 <template>

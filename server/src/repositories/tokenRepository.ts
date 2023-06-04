@@ -82,10 +82,7 @@ const validateUser = async (
 		return res.status(UNAUTHORIZED).json({ error: TOKEN_NOT_VALID });
 	}
 
-	if (
-		persistedEmailToken !== null &&
-		persistedEmailToken.expiration < new Date()
-	) {
+	if (persistedEmailToken !== null && persistedEmailToken.expiration < new Date()) {
 		return res.status(UNAUTHORIZED).json({ error: TOKEN_NOT_VALID });
 	}
 
@@ -145,7 +142,7 @@ export const createOrConnectToken = async (
 export const getPersistedEmailTokenUser = async (
 	req: Request,
 	res: Response
-): Promise<Response> => {
+	): Promise<Response> => {
 
 	const { email, emailToken } = req.body;
 	const persistedEmailToken = await prisma.token.findUnique({

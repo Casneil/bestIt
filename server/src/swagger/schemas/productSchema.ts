@@ -1,4 +1,4 @@
-export const productResponseSchema = {
+export const productSchema = {
 	type: 'object',
 	properties: {
 		id: {

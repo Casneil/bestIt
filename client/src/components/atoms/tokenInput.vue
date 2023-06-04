@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 	import { useAuthStore } from '@/stores/auth';
 
 	const props = defineProps({

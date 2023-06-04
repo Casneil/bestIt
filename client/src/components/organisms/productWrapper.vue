@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 	import ProductCard from '@/components/molecules/productCard.vue';
 	import { onMounted, ref } from 'vue';
 	import type { BaseProduct, Product } from '@/interfaces/Product';
@@ -10,11 +11,11 @@
 	const getAllProducts = async () => {
 		const data = await fetchWrapper.get(`${API_BASE_URL}/product/all`)
 		const json = await data as BaseProduct[];
-
 		products.value = json;
 	};
 
 	onMounted(() => getAllProducts());
+
 </script>
 
 <template>

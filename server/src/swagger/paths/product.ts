@@ -17,7 +17,7 @@ export const productAll = {
 					schema: {
 						type: 'array',
 						items: {
-							'$ref': '#/components/schemas/ProductResponseSchema',
+							'$ref': '#/components/schemas/Product',
 						}
 					}
 				}
@@ -65,7 +65,7 @@ export const product = {
 				'application/json': {
 					schema: {
 						type: 'object',
-						'$ref': '#/components/schemas/ProductResponseSchema'
+						'$ref': '#/components/schemas/Product'
 					}
 				}
 			}

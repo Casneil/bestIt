@@ -1,10 +1,11 @@
 import { PORT } from '../constants/globals';
-import { productResponseSchema } from './schemas/productSchema';
+import { productSchema } from './schemas/productSchema';
 import { loginSchema, loginResponseSchema } from './schemas/login';
 import { authenticateSchema, authenticationSuccessSchema } from './schemas/authenticate';
 import { product, productAll } from './paths/product';
 import { login } from './paths/login';
 import { authenticate } from './paths/authenticate';
+
 export const docs = {
 	openapi: "3.0.1",
 	info: {
@@ -57,7 +58,7 @@ export const docs = {
 	},
 	components: {
 		schemas: {
-			ProductResponseSchema: productResponseSchema,
+			Product: productSchema,
 			Authenticate: authenticateSchema,
 			Authenticated: authenticationSuccessSchema,
 			Login: loginSchema,

@@ -3,7 +3,6 @@ import { defineStore } from 'pinia'
 import { fetchWrapper } from '@/helpers/fetch';
 import { API_BASE_URL } from '@/constants/globals';
 
-
 export const useAuthStore = defineStore({
 	id: 'auth',
 	state: () => ({

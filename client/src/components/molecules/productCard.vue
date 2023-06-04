@@ -1,11 +1,12 @@
 <script setup lang="ts">
+
 	import ImageAtom from '@/components/atoms/image.vue';
 	import Typography from '@/components/atoms/typography.vue';
 	import type { BaseProduct } from '@/interfaces/Product';
 
 	interface IProps {
 		product: BaseProduct;
-	}
+	};
 
 	const props = defineProps<IProps>();
 
@@ -19,6 +20,9 @@
 		<span class="mx-5">
 			<Typography
 			:text="`Article: ${props.product.articleNumber}`"
+			:variant="'small'" />
+			<Typography
+			:text="`Price: ${props.product.price} euros`"
 			:variant="'small'" />
 			<Typography
 			:text="`Rating: ${props.product.rating}`"
