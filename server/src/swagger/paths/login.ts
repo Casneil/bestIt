@@ -1,5 +1,5 @@
 export const login = {
-	tags: ['login'],
+	tags: ['Login'],
 	summary: 'Creates a one time password and send it to the user email',
 	requestBody: {
 		required: true,

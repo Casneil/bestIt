@@ -14,6 +14,8 @@ export const authenticateUser = async (
 ) => {
 	const authBearer = req.headers[AUTHORIZATION];
 	const jwtToken = authBearer !== undefined && authBearer.split(' ')[1];
+	console.log(jwtToken);
+
 	if (!jwtToken) {
 		return res.sendStatus(UNAUTHORIZED);
 	}

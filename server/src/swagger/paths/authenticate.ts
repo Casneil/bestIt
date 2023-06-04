@@ -1,6 +1,7 @@
 export const authenticate = {
-	tags: ['authenticate'],
+	tags: ['Authenticate'],
 	summary: 'Creates or find a user\'s jwt auth token and return it',
+	operationId: 'getAllProducts',
 	requestBody: {
 		required: true,
 		content: {

@@ -19,7 +19,6 @@ import {
 	JWT_SECRET,
 	TOKEN_NOT_VALID,
 	UNKNOWN_ERROR,
-	EMAIL_RECIPIENT,
 } from '../constants/globals';
 
 const prisma = new PrismaClient();
@@ -122,16 +121,10 @@ export const createOrConnectToken = async (
 			}
 		});
 
-		//TODO: Add better error handling
-		if (typeof sendEmail !== 'boolean' || typeof email !== 'string') {
-
-			return res.status(INTERNAL_SERVER_ERROR).json({ error: UNKNOWN_ERROR });
-		}
-
 		if (userToken.emailToken && sendEmail) {
 			await sendEmailToAuthenticateUser({
 				...EMAIL_CONFIG,
-				to: email, // Please use a real email.
+				to: email,
 				subject: replaceString(EMAIL_CONFIG.subject, '{code}', userToken.emailToken),
 				html: replaceString(EMAIL_CONFIG.subject, '{code}', userToken.emailToken),
 			});

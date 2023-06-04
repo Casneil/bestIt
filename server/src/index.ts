@@ -12,7 +12,6 @@ app.use(cors());
 app.use(express.json());
 app.use('/api/auth', authRoute);
 app.use('/api/product', authenticateUser, productsRoutes)
-
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(docs));
 
 app.listen(PORT, () => {

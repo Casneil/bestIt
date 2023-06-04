@@ -19,7 +19,7 @@ interface BaseProduct {
 	thumbnail: string;
 }
 
-interface Product extends BaseProduct{
+interface Product extends BaseProduct {
 	images: Image[];
 }
 

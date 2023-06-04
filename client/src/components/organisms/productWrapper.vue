@@ -1,7 +1,7 @@
 <script setup lang="ts">
 	import ProductCard from '@/components/molecules/productCard.vue';
 	import { onMounted, ref } from 'vue';
-	import type { BaseProduct } from '@/interfaces/Product';
+	import type { BaseProduct, Product } from '@/interfaces/Product';
 	import { API_BASE_URL } from '@/constants/globals';
 	import { fetchWrapper } from '@/helpers/fetch';
 
@@ -19,12 +19,13 @@
 
 <template>
 	<span v-if="products === null">Loading...</span>
-	<div
+	<button
+		type="button"
 		v-else
 		v-for="(product, index) in products"
 		:key="index"
-		class="container p-8 m-10 mx-auto bg-orange-200 border shadow cursor-pointer rounded-xl">
-		<ProductCard :config="product" />
-	</div>
+		class="container p-2 m-5 mx-auto border shadow cursor-pointer bg-stone-100 rounded-xl">
+		<ProductCard :product="product" />
+	</button>
 </template>
 

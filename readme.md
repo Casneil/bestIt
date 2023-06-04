@@ -13,32 +13,32 @@
 
 
 ## How to get this project
-- Clone this reposoitory to your computer
-- Open the cloned project in you favourite editor e.g [VSCode](https://code.visualstudio.com/)
+- Clone this reposoitory to your computer.
+- Open the cloned project in you favourite editor e.g [VSCode](https://code.visualstudio.com/).
 
 ## How to run the backend server
-- from your terminal in the project root directiory run the commands stated in the Server Commands section
-
-## How to run the backend server
-- from your terminal in the project root directiory run the commands stated in the Client Commands section
+- from your terminal in the project root directiory run the commands stated in the Server Commands section.
 
 ## Server Commands
 `cd server`
 
 `npm install`
 
-`npx prisma migrate dev --name 'your migration name'` for Database migrations
+`npx prisma migrate dev --name 'your migration name'` for Database migrations.
 
 `npm run dev` to start local server
 
-`prisma-studio` to connect to the database and run web database ui
+`prisma-studio` to connect to the database and run web database ui.
+
+## How to run the client
+- from your terminal in the project root directiory run the commands stated in the Client Commands section.
 
 ## Client Commands
 `cd client`
 
 `npm install`
 
-`npm run dev` to start local server
+`npm run dev` to start local server.
 
 ## Swagger
 [Test Api Endpoints](http://localhost:5000/api-docs)
@@ -49,10 +49,10 @@
 - No, you will need an actual email address to recieve your login code.
 
 #### I did not recieve a email with a one time password.
-- Please check your spam folder as sometimes emails ends up there
+- Please check your spam folder as sometimes emails ends up there.
 
 #### Is this a complete project?
-- No, this is still WIP and new feautres will be added requently
+- No, this is still WIP and new feautres will be added requently.
 
 #### Can I change database provider?
 - Definitely!, using `npx prisma init --datasource-provider 'your database'`

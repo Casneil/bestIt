@@ -7,7 +7,6 @@ import { API_BASE_URL } from '@/constants/globals';
 export const useAuthStore = defineStore({
 	id: 'auth',
 	state: () => ({
-		// initialize state from local storage to enable user to stay logged in
 		authUser: JSON.parse(localStorage.getItem('bestItUser')!),
 		returnUrl: '',
 		userEmail: ''
@@ -30,7 +29,7 @@ export const useAuthStore = defineStore({
 				.post(`${ API_BASE_URL }/auth/authenticate`, { ...params });
 			this.authUser = authUser;
 			localStorage.setItem('bestItUser', JSON.stringify(authUser));
-			// redirect to previous url or default to home page
+
 			if (this.authUser.length) {
 				router.push(this.returnUrl);
 			} else {

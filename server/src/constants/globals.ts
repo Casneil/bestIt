@@ -18,12 +18,11 @@ const AUTHORIZATION = 'authorization';
 const JWT_SECRET = 'b039ebb7-ce22-4e93-80f7-5bb44738ce2e'
 const GOOGLE_APP_PASSWORD = 'oqfphmlwelulucry'
 const EMAIL_SENDER = 'dev.simpson.casneil@gmail.com'
-const EMAIL_RECIPIENT = ''
 
 const EMAIL_CONFIG = {
 	from: EMAIL_SENDER,
 	to: '', // This is left blank because this service should me used to send emails to multiple users.
-	subject: 'Your one time login password: {code}',
+	subject: 'Your one single sign-on code: {code}',
 	html: '<p>Please use this code to log in <b>{code}</b></p>'
 };
 
@@ -43,6 +42,5 @@ export {
 	UNAUTHORIZED_ERROR,
 	AUTHENTICATION_FAILED,
 	TOKEN_NOT_VALID,
-	EMAIL_RECIPIENT,
 	AUTHORIZATION,
 };

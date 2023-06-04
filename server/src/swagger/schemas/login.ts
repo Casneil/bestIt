@@ -10,7 +10,7 @@ const loginSchema = {
 		sendEmail: {
 			type: 'boolean',
 			description: 'Boolean value which determines if an email be send to the user\'s email address. Defaults to true',
-			example: 'false'
+			example: 'true'
 		}
 	}
 };

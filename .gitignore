@@ -1,6 +1,5 @@
 # In a real world situation .env files should also be ignored.
 node_modules*
-migrations/
-dev.db
-dev.db-journal
 backup*
+dummyData.json
+dummyImages.json
