@@ -22,6 +22,8 @@
 ## Server Commands
 `cd server`
 
+`npm install`
+
 `npx prisma migrate dev --name 'your migration name'` for Database migrations
 
 `npm run dev` to start local server
@@ -30,6 +32,8 @@
 
 ## Client Commands
 `cd client`
+
+`npm install`
 
 `npm run dev` to start local server
 
