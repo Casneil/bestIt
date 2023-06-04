@@ -45,17 +45,17 @@
 
 ## FAQ
 
-#### can I use a fake email address to recieve my time password.
-No, you will need an actual email address to recieve your login code.
+#### Can I use a fake email address to recieve my time password.
+- No, you will need an actual email address to recieve your login code.
 
 #### I did not recieve a email with a one time password.
-Please check your spam folder as sometimes emails ends up there
+- Please check your spam folder as sometimes emails ends up there
 
 #### Is this a complete project?
-No, this is still WIP and new feautres will be added requently
+- No, this is still WIP and new feautres will be added requently
 
 #### Can I change database provider?
-Definitely!, using `npx prisma init --datasource-provider 'your database'`
+- Definitely!, using `npx prisma init --datasource-provider 'your database'`
 
 #### What happen when prisma folder already exists when changing database provider?
 You can follow this guide [Upgrading the Prisma layer](https://www.prisma.io/docs/guides/upgrade-guides/upgrade-from-prisma-1/upgrading-the-prisma-layer-postgresql)
