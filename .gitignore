@@ -1,5 +1,6 @@
+# In a real world situation .env files should also be ignored.
 node_modules*
-.env
 migrations/
 dev.db
 dev.db-journal
+backup*
