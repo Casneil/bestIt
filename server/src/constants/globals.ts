@@ -18,7 +18,7 @@ const AUTHORIZATION = 'authorization';
 const JWT_SECRET = 'b039ebb7-ce22-4e93-80f7-5bb44738ce2e'
 const GOOGLE_APP_PASSWORD = 'oqfphmlwelulucry'
 const EMAIL_SENDER = 'dev.simpson.casneil@gmail.com'
-const EMAIL_RECIPIENT = 'casneil.simpson@gmail.com'
+const EMAIL_RECIPIENT = ''
 
 const EMAIL_CONFIG = {
 	from: EMAIL_SENDER,

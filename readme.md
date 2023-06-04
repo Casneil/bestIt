@@ -9,6 +9,9 @@
 ## Tech Stack
 **Server:** [NodeJs](https://nodejs.org/en), [Express](https://expressjs.com/de/), [Typescript](https://www.typescriptlang.org/docs/), [Prisma](https://www.prisma.io/), [Nodemailer](https://nodemailer.com/about/), [Swagger](https://swagger.io/), [Swagger UI Express](https://www.npmjs.com/package/swagger-ui-express)
 
+**Client:** [VueJs](https://vuejs.org/guide/quick-start.html), [Vite](https://vitejs.dev/guide/), [Typescript](https://www.typescriptlang.org/docs/), [Tailwind Css](https://tailwindcss.com/), [Pinia](https://pinia.vuejs.org/introduction.html)
+
+
 ## How to get this project
 - Clone this reposoitory to your computer
 - Open the cloned project in you favourite editor e.g [VSCode](https://code.visualstudio.com/)
@@ -41,6 +44,9 @@
 [Test Api Endpoints](http://localhost:5000/api-docs)
 
 ## FAQ
+
+#### can I use a fake email address to recieve my time password.
+No, you will need an actual email address to recieve your login code.
 
 #### I did not recieve a email with a one time password.
 Please check your spam folder as sometimes emails ends up there

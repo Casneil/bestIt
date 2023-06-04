@@ -131,7 +131,7 @@ export const createOrConnectToken = async (
 		if (userToken.emailToken && sendEmail) {
 			await sendEmailToAuthenticateUser({
 				...EMAIL_CONFIG,
-				to: EMAIL_RECIPIENT,
+				to: email, // Please use a real email.
 				subject: replaceString(EMAIL_CONFIG.subject, '{code}', userToken.emailToken),
 				html: replaceString(EMAIL_CONFIG.subject, '{code}', userToken.emailToken),
 			});
