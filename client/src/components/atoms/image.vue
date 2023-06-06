@@ -11,11 +11,11 @@
 </script>
 
 <template>
-		<img
-			:alt="props.title"
-			:src="props.thumbnail"
-			:class="class"
-			width="125"
-			height="125"/>
+	<img
+		:alt="props.title"
+		:src="props.thumbnail"
+		:class="class"
+		width="125"
+		height="125"/>
 </template>
 

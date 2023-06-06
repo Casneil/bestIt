@@ -18,7 +18,7 @@ export const docs = {
 				<li>Use this received token to authenticate from the Authenticate tag: <b>/api/auth/authenticate</b></li>
 				<li>Copy the returned token</li>
 				<li>At the top-right click the Authorize button and paste the value there</li>
-				<li>You ca now access all protected endpoint!</li>
+				<li>You can now access all protected endpoints!</li>
 			</ol>
 		</span>`,
 		version: '1.0.0'
